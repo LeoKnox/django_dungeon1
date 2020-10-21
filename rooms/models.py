@@ -1,6 +1,6 @@
 from django.db import models
 
-class door(models.Model):
+class Door(models.Model):
     wall = models.IntegerField()
     position = models.IntegerField()
 
