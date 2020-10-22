@@ -1,8 +1,8 @@
 from django.contrib import admin
-from django.conf.urls import include, url
+from django.urls import path
 from rooms.views import index
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', index),
+    path('', index, name='index'),
+    path('admin/', admin.site.urls)
 ]
